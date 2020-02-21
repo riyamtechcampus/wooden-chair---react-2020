@@ -1,0 +1,33 @@
+/* ! Slider  */
+
+section.slider img {
+    width: 100%;
+}
+
+.dot {
+    position: relative;
+}
+
+.dot li.first, .dot li.second {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    display: inline-block;
+    margin-left: 500px;
+    border-radius: 50%;
+    transform: scale(1);
+}
+
+.dot li.second {
+    margin-left: 520px;
+    background-color: #000;
+    transform: scale(1);
+}
+
+.dot li:hover {
+    background-color: var(--mainColor);
+    transform: scale(1.5);
+}

@@ -1,0 +1,277 @@
+/* ! catagory  */
+
+.catagory-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+}
+
+.catagory-item {
+    position: relative;
+}
+
+.catagory-item img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.catagory-item-subtitle {
+    color: grey;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.catagory-items .icon {
+    width: 30px;
+    height: 30px;
+    background-color: var(--mainColor);
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 5px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.2s ease, opacity 0.2s ease;
+}
+
+.catagory-items:hover .icon {
+    visibility: visible;
+    opacity: 1;
+}
+
+.catagory-dots {
+    position: relative;
+    margin-top: 50px;
+}
+
+.catagory-dots ul {
+    position: absolute;
+}
+
+.catagory-dots ul li.first {
+    position: absolute;
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    background-color: #000;
+    margin-left: 510px;
+    border-radius: 50%;
+    text-align: center;
+    transform: scale(1);
+    transition: transform 0.2s ease;
+}
+
+.catagory-dots ul li.first:hover {
+    transform: scale(1.5);
+}
+
+.catagory-dots ul li.second {
+    position: absolute;
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    background-color: var(--mainColor);
+    margin-left: 530px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.catagory-dots ul li.second:hover {
+    transform: scale(1.5);
+}
+
+/* ! discount  */
+
+.discount {
+    margin: 100px 0;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+.discount .discount-desc {
+    background-color: rgb(231, 213, 236);
+}
+
+.discount .discount-desc .top {
+    position: relative;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.discount .discount-desc .top .icon {
+    position: absolute;
+    left: -50px;
+    top: 0;
+    color: var(--mainColor);
+    font-size: 2.5rem;
+}
+
+.discount .discount-desc .top .discount-title {
+    font-size: 20px;
+    margin-left: 25px;
+}
+
+.discount .discount-desc .top .discount-subtitle {
+    font-size: 20px;
+    margin-left: 25px;
+    color: grey;
+}
+
+.discount .discount-desc p {
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 50px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: grey;
+}
+
+.discount .discount-item:nth-child(2) {
+    background-image: url('../images/cms-banner-1.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    transform: scale(1);
+    transition: transform 0.4s ease;
+}
+
+.discount .discount-item:nth-child(2):hover {
+    transform: scale(1.2);
+}
+
+.discount .discount-item:nth-child(2) .discount-item-info, .discount .discount-item:nth-child(3) .discount-item-info {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+.discount .discount-item:nth-child(2) .discount-item-info h2, .discount .discount-item:nth-child(3) .discount-item-info h2 {
+    margin-top: 5px;
+}
+
+.discount .discount-item:nth-child(3) {
+    background-image: url('../images/cms-banner-2.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    transform: scale(1);
+    transition: transform 0.4s ease;
+}
+
+.discount .discount-item:nth-child(3):hover {
+    transform: scale(1.2);
+}
+
+/* ! bullets span  */
+
+.discount-desc .bullets {
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.discount-desc .bullets span {
+    display: inline-block;
+    width: 40px;
+    height: 3px;
+    background-color: grey;
+    top: 0;
+    left: 20 px;
+    line-height: 2;
+    float: right;
+}
+
+.discount-desc .bullets span:nth-child(1) {
+    margin-right: 20px;
+}
+
+.discount-desc .bullets span:nth-child(2), .discount-desc .bullets span:nth-child(3) {
+    margin-right: 10px;
+}
+
+.discount-desc .bullets span:nth-child(1):hover, .discount-desc .bullets span:nth-child(2):hover, .discount-desc .bullets span:nth-child(3):hover {
+    background-color: var(--mainColor);
+}
+
+/* ! Spirite */
+
+.sprites {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 100px;
+}
+
+.sprite-item {
+    text-align: center;
+    border-right: 1px solid var(--mainColor);
+}
+
+.sprite-icon {
+    background-image: url("../images/service-icon.png");
+    height: 60px;
+    background-repeat: no-repeat;
+}
+
+.sprite-icon-1 {
+    background-position: center 5px;
+    transition: background-position 0.4s ease;
+}
+
+.sprite-icon-1:hover {
+    background-position: center -95px;
+}
+
+.sprite-icon-2 {
+    background-position: center -180px;
+    transition: background-position 0.4s ease;
+}
+
+.sprite-icon-2:hover {
+    background-position: center -270px;
+}
+
+.sprite-icon-3 {
+    background-position: center -366px;
+    transition: background-position 0.4s ease;
+}
+
+.sprite-icon-3:hover {
+    background-position: center -460px;
+}
+
+.sprite-icon-4 {
+    background-position: center -554px;
+    transition: background-position 0.4s ease;
+}
+
+.sprite-icon-4:hover {
+    background-position: center -640px;
+}
+
+.sprite-icon-5 {
+    background-position: center -740px;
+    transition: background-position 0.4s ease;
+}
+
+.sprite-icon-5:hover {
+    background-position: center -830px;
+}
+
+.sprite-item:last-child {
+    border-right: 0;
+}
+
+.sprite-item .sprite-info h3 {
+    font-size: 16px;
+}
+
+.sprite-item .sprite-info span {
+    font-size: 15px;
+    color: grey;
+}

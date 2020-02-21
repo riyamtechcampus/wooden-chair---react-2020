@@ -1,0 +1,183 @@
+/* ! products  */
+
+.list-products {
+    text-align: center;
+}
+
+.list-products li {
+    display: inline-block;
+}
+
+.list-products li a {
+    display: block;
+    font-size: 16px;
+    padding: 0 10px;
+    color: #000;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+.list-products li a:hover {
+    color: var(--mainColor);
+}
+
+/* ! hover image over image  */
+
+.products-items {
+    margin-top: 20px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1px;
+}
+
+.product-img {
+    position: relative;
+}
+
+.product-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover .product-overlay {
+    transform: scaleX(1);
+}
+
+.product-overlay ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.product-overlay ul li {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: var(--mainColor);
+    text-align: center;
+}
+
+.product-overlay ul li i {
+    color: #fff;
+    line-height: 40px;
+}
+
+.product-info i {
+    color: yellow;
+}
+
+.product-info i:nth-child(4), .product-info i:nth-child(5) {
+    color: grey;
+}
+
+.product-info i.icon {
+    color: yellow;
+}
+
+.product-info span {
+    color: grey;
+    font-size: 15px;
+}
+
+.product-info h4 {
+    margin-top: 8px;
+}
+
+/* ! event sections  */
+
+.events {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 10px;
+}
+
+.events .event-items {
+    position: relative;
+}
+
+.events .event-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.event-info {
+    background: rgb(251, 210, 210);
+    margin-bottom: 4px;
+}
+
+.event-info-overlay {
+    overflow: hidden;
+    margin: 35px;
+}
+
+.event-info-overlay .event-info-left {
+    float: left;
+    color: var(--mainColor);
+}
+
+.event-info-overlay .event-info-left h3 {
+    font-size: 40px;
+}
+
+.event-info-overlay .event-info-left h4 {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.event-info-overlay .event-info-right {
+    padding-top: 5px;
+    font-weight: bold;
+}
+
+.overlay-desc {
+    margin: 40px;
+    color: grey;
+    font-size: 15px;
+    font-family: sans-serif !important;
+    line-height: 1.5;
+}
+
+.info-lists {
+    margin-top: 60px;
+}
+
+.info-lists span {
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    float: right;
+    margin: 0 6px;
+    background-color: grey;
+}
+
+.info-lists span.active {
+    background-color: var(--mainColor);
+}
+
+.info-lists span:first-child {
+    margin-right: 25px;
+}
+
+.info-lists span:hover {
+    background-color: var(--mainColor);
+}
+
+/* ! product spirit icon second  */
+
+.product-spirit-second {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 2px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+    margin-top: 40px;
+}
